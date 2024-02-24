@@ -14,6 +14,8 @@ import EmojiPicker from './components/EmojiPicker';
 import EmojiList from './components/EmojiList';
 import EmojiSticker from './components/EmojiSticker';
 
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
 export default function App() {
   const [pickedEmoji, setPickedEmoji] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -49,7 +51,7 @@ export default function App() {
   const onSaveImageAsync = async () => {};
 
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer
           placeholderImageSource={placeholderImage}
@@ -104,7 +106,7 @@ export default function App() {
       </EmojiPicker>
 
       <StatusBar style="auto" />
-    </View>
+    </GestureHandlerRootView>
   );
 }
 
