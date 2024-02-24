@@ -149,7 +149,7 @@ export default function App() {
         />
       </EmojiPicker>
 
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </GestureHandlerRootView>
   );
 }
